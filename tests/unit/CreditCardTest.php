@@ -11,7 +11,7 @@ class CreditCardTest extends Setup
 {
     public function testGet_givesErrorIfInvalidProperty()
     {
-        $this->expectException('PHPUnit\Framework\Error\Error', 'Undefined property on Braintree\CreditCard: foo');
+        $this->expectException('PHPUnit_Framework_Error', 'Undefined property on Braintree\CreditCard: foo');
         $cc = Braintree\CreditCard::factory([]);
         $cc->foo;
     }

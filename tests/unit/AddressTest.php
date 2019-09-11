@@ -10,7 +10,7 @@ class AddressTest extends Setup
 {
     public function testGet_givesErrorIfInvalidProperty()
     {
-        $this->expectException('PHPUnit\Framework\Error\Error', 'Undefined property on Braintree\Address: foo');
+        $this->expectException('PHPUnit_Framework_Error', 'Undefined property on Braintree\Address: foo');
 
         $a = Braintree\Address::factory([]);
 
